@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { DATABASE } = require("../utils/config");
+const { DATABASE } = require("../config/config");
 
 const uri = `mongodb://${DATABASE.USERNAME}:${DATABASE.PASSWORD}@localhost:27017/`;
 

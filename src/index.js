@@ -1,11 +1,11 @@
 const express = require("express");
-const { SERVER } = require("./utils/config");
+const { SERVER } = require("./config/config");
 const cors = require("cors");
 const morgan = require("morgan");
 
 const connectDb = require("./db/db");
 
-const todoRouter = require("./module/todo/index");
+const todoRouter = require("./module/todo/todo.router");
 
 const app = express();
 app.use(express.json());
